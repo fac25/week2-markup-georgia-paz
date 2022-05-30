@@ -11,8 +11,13 @@
 
 <body>
   <header>
-    <nav>
+    <nav class="navigation">
       <!-- main navigation -->
+      <ul>
+       <li><a class="work" href="#work">Work</a></li>
+       <li><a class="studio" href="#studio">Studio</a></li>
+       <li><a class="contact" href="#contact-form">Contact us</a></li>
+      </ul>
     </nav>
   </header>
   <!-- Heading Section -->
@@ -42,7 +47,27 @@
   <!-- Work Section -->
   <section></section>
   <!-- Section banner -->
-  <section></section>
+  <section id="contact-form">
+    <form action="" method="get">
+        
+      <!--required meets project need to have required field before submission-->
+
+      <label for="name">Name</label> 
+      <input type="text" id="name" name="name" value="" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" value="" required>
+
+      <label for="telephone">Telephone</label>
+      <input type="tel" id="telephone" name="tel" value="" required>  
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="3" autocorrect="on">Hello Georgia & Paz, </textarea>
+              
+      <button type="submit">Say hello</button>
+    </form>
+
+  </section>
   <!-- Footer -->
   <footer>
     <div></div>
