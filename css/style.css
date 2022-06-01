@@ -1,3 +1,6 @@
+:root{
+  --green: #008000;
+}
 body {
   margin: 0;
 }
@@ -114,11 +117,9 @@ margin: 0 .5rem;
   color: white;
 }
 #heading{
-  display: flex;
-    flex-direction: column;
-    justify-content: end;
-    flex-wrap: wrap;
-    height: 100vh;
+  /* height: 130vw; */
+  overflow: hidden;
+  padding-bottom: 5rem;
 }
 .headline h1 {
   margin: 0;
@@ -137,15 +138,19 @@ margin: 0 .5rem;
 }
 
 .headline__body {
-  /* display: flex;
+   display: flex;
   flex-direction: column;
   justify-content: end;
   flex-wrap: wrap; 
-  height: 100vh;*/
+  /*height: 100vh;*/
 }
 
 .headline__image {
+  position: absolute;
+  left: 0;
+  right: 0;
   top: 0;
+  overflow: hidden;
   z-index: -1;
 }
 .headline__image img{
@@ -172,3 +177,43 @@ margin: 0 .5rem;
   }
 }
 /* .HEADER */
+/* FORM */
+label,
+input,
+textarea,
+select,
+button {
+  font-size: 1.3rem;
+  line-height: 1.2
+}
+
+
+form div {
+  margin-top: 1rem;
+}
+
+label {
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+input,
+textarea {
+  padding: 0.4rem;
+  width: 100%;
+  border: 1px solid;
+}
+
+button {
+  margin-top: 2rem;
+  background: var(--green);;
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+}
+
+button:hover,
+button:focus {
+  background: var(--green);
+}
+/* .FORM */

@@ -98,31 +98,59 @@
             nam
             minimum ponderum. </p>
         </div>
-      </div>
-      <div class="white">
-        <nav class="secondary-nav">
-          <div><a href="#work">Studio</a></div>
-          <div>
-            <ul>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li><a href="mailto:me@example.com" class="block">me@example.com</a></li>
-              <li><a href="tel:+1234445556" class="block">+123 344 45 556</a></li>
-            </ul>
-          </div>
-        </nav>
+
+        <div class="white">
+          <nav class="secondary-nav">
+            <div><a href="#work">Studio</a></div>
+            <div>
+              <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="mailto:me@example.com" class="block">me@example.com</a></li>
+                <li><a href="tel:+1234445556" class="block">+123 344 45 556</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </div>
   </section>
   <!-- Work Section -->
   <section></section>
-  <!-- Section banner -->
-  <section></section>
+  <section id="contact-form" class="container">
+    <form action="" method="get">
+
+      <!--required meets project need to have required field before submission-->
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" value="" required>
+      </div>
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" value="" required>
+      </div>
+
+
+      <div>
+        <label for="telephone">Telephone</label>
+        <input type="tel" id="telephone" name="tel" value="" required>
+      </div>
+
+      <div>
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="3" autocorrect="on">Hello Georgia & Paz, </textarea>
+      </div>
+
+
+      <button type="submit">Say hello</button>
+    </form>
+
+  </section>
   <!-- Footer -->
   <footer>
     <div></div>
